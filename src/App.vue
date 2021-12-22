@@ -10,12 +10,6 @@ import Navbar from './components/Navbar.vue';
 export default {
   components: {
     Navbar
-  },
-  mounted() {
-    let vh = window.innerHeight * 0.01;
- 
-    // Configura o valor em --vh na raiz do documento
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 }
 </script>
