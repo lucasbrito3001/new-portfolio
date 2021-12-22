@@ -5,11 +5,11 @@
         <h2 class="subtitle">PORTFÓLIO</h2>
         <h1 class="title">Lucas de Brito</h1>
         <h3 class="stack">| FULL-STACK DEVELOPER |</h3>
-        <v-btn outlined color="#efff0d" class="see-more-button">
+        <v-btn outlined color="#ffffff" class="see-more-button">
           Ver mais
           <img
             class="see-more-arrow"
-            src="https://img.icons8.com/ios/16/efff0d/expand-arrow--v2.png"
+            src="https://img.icons8.com/ios/16/ffffff/expand-arrow--v2.png"
           />
         </v-btn>
       </header>
@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 main {
-  background-color: rgb(46, 56, 114);
+  background-color: var(--main-blue);
   width: 100vw;
 }
 .home-page {
@@ -82,12 +82,12 @@ footer {
 }
 
 .subtitle {
-  color: var(--yellow-home);
+  color: var(--second-blue);
 }
 
 .stack {
   font-family: "Merriweather", serif;
-  color: var(--yellow-home);
+  color: var(--second-blue);
 }
 
 .see-more-button {

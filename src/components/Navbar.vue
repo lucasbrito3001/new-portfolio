@@ -4,36 +4,37 @@
       <div class="expand-navbar">
         <li class="navbar-list-item">
           <div class="icon-navbar-list-item">
-            <img
-              src="https://img.icons8.com/ios/48/ffffff/forward--v1.png"
-            />
+            <img src="https://img.icons8.com/ios/ffffff/forward--v1.png" />
           </div>
           <p class="desc-navbar-list-item">MENU</p>
         </li>
       </div>
       <div class="items-navbar-list">
-        <li
-          class="navbar-list-item"
+        <router-link
+          :to="item.route"
           v-for="(item, idx) in navbarItems"
           :key="idx"
+          class="links"
         >
-          <router-link :to="item.route">
+          <li class="navbar-list-item">
             <div class="icon-navbar-list-item">
-              <img :src="`https://img.icons8.com/${item.img}`" />
+              <img :src="`https://img.icons8.com/ios/48/ffffff/${item.img}`" />
             </div>
             <p class="desc-navbar-list-item">{{ item.desc }}</p>
-          </router-link>
-        </li>
-        <li class="navbar-list-item footer">
-          <a href="https://github.com/lucasbrito3001/new-portfolio" target="_blank">
+          </li>
+        </router-link>
+        <a
+          href="https://github.com/lucasbrito3001/new-portfolio"
+          target="_blank"
+          class="links"
+        >
+          <li class="navbar-list-item footer">
             <div class="icon-navbar-list-item">
-              <img
-                src="https://img.icons8.com/ios/48/ffffff/github--v1.png"
-              />
+              <img src="https://img.icons8.com/ios/48/ffffff/github--v1.png" />
             </div>
             <p class="desc-navbar-list-item">REPOSITORIO</p>
-          </a>
-        </li>
+          </li>
+        </a>
       </div>
     </ul>
   </nav>
@@ -44,10 +45,10 @@ export default {
   name: "NavbarComp",
   data: () => ({
     navbarItems: [
-      { desc: "HOME", route: "/", img: "ios/48/ffffff/home--v1.png" },
-      { desc: "SOBRE", route: "/about", img: "ios/48/ffffff/info-squared.png" },
-      { desc: "PORTFÓLIO", route: "/portfolio", img: "ios/48/ffffff/view-quilt.png" },
-      { desc: "CONTATO", route: "/contact", img: "ios/48/ffffff/new-post--v1.png" },
+      { desc: "HOME", route: "/", img: "home--v1.png" },
+      { desc: "SOBRE", route: "/about", img: "info-squared.png" },
+      { desc: "PORTFÓLIO", route: "/portfolio", img: "view-quilt.png" },
+      { desc: "CONTATO", route: "/contact", img: "new-post--v1.png" },
     ],
   }),
 };
@@ -85,7 +86,7 @@ export default {
   background-color: #081027;
 }
 
-.navbar-list-item a, .navbar-list-item {
+.navbar-list-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +94,7 @@ export default {
   height: 5vw;
 }
 
-.navbar-list-item a:hover {
+.navbar-list-item:hover {
   background-color: #081027;
   transition: 0.5s;
 }
@@ -126,7 +127,7 @@ export default {
   bottom: 0;
 }
 
-a {
+.links {
   text-decoration: none;
 }
 
@@ -157,7 +158,8 @@ a {
     width: 100%;
   }
 
-  .navbar-list-item a, .navbar-list-item {
+  .navbar-list-item a,
+  .navbar-list-item {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +179,10 @@ a {
 
   .desc-navbar-list-item {
     display: none;
+  }
+
+  .icon-navbar-list-item {
+    width: 20vw;
   }
 }
 </style>
