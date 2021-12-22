@@ -112,7 +112,8 @@ footer {
   }
 
   .home-page {
-    height: 90vh;
+    height: 90vh; /* Fallback para não-suporte a Custom Properties */
+    height: calc(var(--vh, 1vh) * 90);
   }  
 }
 </style>

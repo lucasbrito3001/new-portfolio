@@ -138,7 +138,8 @@ a {
     left: 0;
     background-color: #0e193d;
     width: 100vw;
-    height: 10vh;
+    height: 10vh; /* Fallback para não-suporte a Custom Properties */
+    height: calc(var(--vh, 1vh) * 10);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +162,8 @@ a {
     align-items: center;
     justify-content: center;
     width: 20vw;
-    height: 10vh;
+    height: 10vh; /* Fallback para não-suporte a Custom Properties */
+    height: calc(var(--vh, 1vh) * 10);
   }
 
   .navbar-list-item.footer {
