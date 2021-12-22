@@ -98,8 +98,7 @@ main p {
 
 @media screen and (max-width: 992px) {
   .about-intro {
-    height: 90vh; /* Fallback para não-suporte a Custom Properties */
-    height: calc(var(--vh, 1vh) * 90);
+    height: 90vh;
   }
 
   main {
