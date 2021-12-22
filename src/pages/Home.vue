@@ -17,7 +17,7 @@
         <ul>
           <li v-for="(item, idx) in footerItems" :key="idx">
             <a :href="item.route" target="_blank">
-              <img
+              <img class="footer-home-img"
                 :src="`https://img.icons8.com/ios-filled/48/ffffff/${item.icon}.png`"
               />
             </a>
@@ -114,6 +114,10 @@ footer {
   .home-page {
     height: 90vh; /* Fallback para não-suporte a Custom Properties */
     height: calc(var(--vh, 1vh) * 90);
-  }  
+  }
+
+  .footer-home-img {
+    width: 36px;
+  }
 }
 </style>

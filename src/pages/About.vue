@@ -15,24 +15,17 @@
               maior motivo para me tornar um desenvolvedor.
             </p>
             <p>
-              Iniciei minha carreira cursando Engenharia de Controle e Automação e
-              com o tempo deixei a faculdade de lado para conseguir progredir como
-              Desenvolvedor de Software, e então, desde Abril de 2021 estou atuando
-              no mercado de trabalho.
-            </p>
-            <p>
               Gosto muito da área e pretendo me especializar cada dia mais, meu
               objetivo futuro é poder compartilhar meu conhecimento com o máximo de
               pessoas possíveis.
             </p>
           </main>
-          <aside>
+          <footer>
             <v-btn outlined color="#efff0d" class="read-more-btn">Ler mais</v-btn>
-            <br />
             <a href="#skills">
               <v-btn color="#efff0d" class="skills-btn">Skills</v-btn>
             </a>
-          </aside>
+          </footer>
         </v-container>
       </section>
 
@@ -79,17 +72,17 @@ main {
   margin-top: 40px !important;
   color: rgb(255, 255, 255);
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
 }
 
-aside {
-  margin-top: 10px;
+footer {
+  margin-top: 40px;
   text-align: center;
 }
 
 .skills-btn {
   color: rgb(95, 95, 95);
-  margin-top: 10px;
+  margin-left: 20px;
 }
 
 main p {
@@ -105,6 +98,14 @@ main p {
 
   main {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 17px;
   }
 
   main p {
