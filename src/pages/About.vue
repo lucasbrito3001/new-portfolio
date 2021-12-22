@@ -40,8 +40,9 @@
         <header>
             <h1 class="general-titles-light">Skills</h1>
         </header>
-
-        
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga delectus quaerat perferendis commodi et quisquam, eligendi quas, rem aut, consequatur nobis suscipit dicta. Tempora repellat magni eius veritatis, repudiandae expedita.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis placeat voluptatem necessitatibus, ratione neque perspiciatis qui accusantium. Voluptates porro voluptatum ab inventore repellat cum expedita delectus sapiente distinctio in.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem totam doloremque molestiae cumque eveniet, pariatur aliquid aut, nesciunt hic iure repudiandae odio, dolore nobis debitis doloribus. Quia atque accusantium dolorum.</p>
       </section>
   </div>
 </template>
@@ -62,7 +63,7 @@ export default {};
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95%;
+  height: 100%;
 }
 
 h1,
@@ -98,7 +99,8 @@ main p {
 
 @media screen and (max-width: 992px) {
   .about-intro {
-    height: 90vh;
+    height: 90vh; /* Fallback para não-suporte a Custom Properties */
+    height: calc(var(--vh, 1vh) * 90);
   }
 
   main {
