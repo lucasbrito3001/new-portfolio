@@ -112,7 +112,7 @@ footer {
   }
 
   .home-page {
-    height: 90vh;
+    height: 90%;
   }  
 }
 </style>

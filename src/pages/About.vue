@@ -98,7 +98,7 @@ main p {
 
 @media screen and (max-width: 992px) {
   .about-intro {
-    height: 90vh;
+    height: 90%;
   }
 
   main {
