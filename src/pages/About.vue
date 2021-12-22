@@ -78,7 +78,7 @@
         <v-row class="skills-perfil-row">
           <v-col cols="12">
             <header>
-              <h2 class="subtitle-curriculo">Currículo</h2>
+              <h2 class="subtitle-curriculo">Carreira</h2>
               <h1 class="title-curriculo">
                 Experiência profissional e <br />
                 acadêmica
