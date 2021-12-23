@@ -47,6 +47,8 @@ export default {
 <style scoped>
 main {
   background-color: var(--main-blue);
+  /* background-image: url('../assets/home-page.jpg');
+  background-size: cover; */
   width: 100vw;
 }
 .home-page {
