@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="general-div">
     <section class="about-intro">
       <v-container class="about-intro-cont">
         <header>
@@ -187,12 +187,16 @@ export default {
       ],
     ],
   }),
+  mounted() {
+    window.scrollTo(0, 0)
+  },
   methods: {
   },
 };
 </script>
 
 <style scoped>
+
 ul {
   list-style: none;
 }
@@ -249,32 +253,6 @@ h2 {
   color: var(--main-blue);
   font-weight: 700;
 }
-
-/* .subtitle-curriculo {
-  color: var(--second-blue);
-  padding: 0 5px;
-  font-weight: 900;
-  margin: 0 auto;
-  font-size: 24px;
-}
-
-.title-curriculo {
-  color: var(--main-blue);
-  padding: 5px;
-  font-weight: 700;
-  margin: 0 0 20px auto;
-  font-size: 30px;
-}
-
-.text-curriculo {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 300;
-  font-family: "Merriweather", serif;
-  color: var(--gray-text);
-  font-size: 18px;
-} */
 
 a {
   text-decoration: none;
@@ -345,4 +323,5 @@ main p {
     text-align: center;
   }
 }
+
 </style>

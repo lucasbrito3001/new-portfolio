@@ -15,15 +15,18 @@
                 <v-col :cols="useMoreDescriptions ? 5 : 12">
                     <img
                       class="footer-home-img"
-                      :src="`https://img.icons8.com/${typeImages}/48/${iconColor}/${item.icon}.png`"
+                      :src="`https://img.icons8.com/${typeImages}/${iconSize}/${iconColor}/${item.icon}.png`"
                     />
                     <br />
-                    <span>{{ item.desc }}</span>
+                    <span class="teste" :class="useButton ? 'descIfHaveButton' : ''">{{ item.desc }}</span>
                 </v-col>
                 <v-col v-if="useMoreDescriptions">
                     <p v-for="(moreDesc, idx) in moreDescriptionsList[key]" :key="idx" class="mb-2">
                         {{ moreDesc.desc }}
                     </p>
+                </v-col>
+                <v-col v-if="useButton">
+                  <v-btn color="#67d4ff" class="perfil-btn" tile>Ver perfil</v-btn>
                 </v-col>
             </v-row>
           </li>
@@ -43,6 +46,10 @@ export default {
     iconColor: {
       type: String,
       default: "000000",
+    },
+    iconSize: {
+      type: String,
+      default: '48'
     },
     listToRender: {
       type: Array,
@@ -72,6 +79,10 @@ export default {
         type: Boolean,
         default: false
     },
+    useButton: {
+      type: Boolean,
+      default: false
+    },
     moreDescriptionsList: {
       type: Array,
       default: () => ([]),
@@ -86,5 +97,21 @@ export default {
     width: 10px;
     height: 10px;
     border-radius: 100px;
+}
+
+.descIfHaveButton {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.perfil-btn {
+  transition: .35s;
+}
+
+.perfil-btn:hover {
+  background-color: #ff7b23 !important;
+  transition: .35s;
+  color: white;
 }
 </style>

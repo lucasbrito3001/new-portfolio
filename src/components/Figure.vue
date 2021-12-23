@@ -1,12 +1,17 @@
 <template>
-  <figure>
-    <img :src="image" width="100%" height="100%" alt="" />
-    <caption>
-      {{
-        caption
-      }}
-    </caption>
-  </figure>
+  <v-card
+    class="mx-auto"
+  >
+    <v-img
+      :src="image"
+      height="100%"
+      width="100%"
+    ></v-img>
+
+    <v-card-title>
+      {{ caption }}
+    </v-card-title>
+  </v-card>
 </template>
 
 <script>
@@ -23,30 +28,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-figure {
-  position: relative;
-  box-shadow: 1px 1px 6px 1px gray, -1px -1px 4px 4px var(--gray-bg);
-}
-
-figure:hover img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-figure:hover {
-  background-color: var(--main-blue);
-}
-
-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  background-color: var(--main-blue);
-  width: 100%;
-  text-align: left;
-  padding: 10px;
-}
-</style>
