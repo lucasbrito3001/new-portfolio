@@ -102,6 +102,10 @@ export default {
   background-color: var(--gray-bg);
 }
 
+.figure.col-md-6.col-12 {
+  padding: 5px;
+}
+
 @media screen and (max-width: 992px) {
   .skills-perfil-title {
     text-align: center;
