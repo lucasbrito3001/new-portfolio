@@ -46,19 +46,54 @@ html, body {
 }
 
 .general-titles-dark {
+  color: var(--main-blue);
+  font-size: 30px !important;
+  font-weight: 900;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.general-titles-light {
   color: white;
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .general-subtitles-dark {
   color: var(--second-blue);
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  text-align: center;
+  margin: 5px auto;
 }
 
-.general-titles-light {
-  color: black;
-}
 
 .general-subtitles-light {
-  color: var(--second-blue);
+  color: white;
+  font-size: 24px !important;
+  font-weight: 900;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.general-text-dark {
+  color: var(--gray-text);
+  font-size: 18px !important;
+  font-weight: 300;
+  text-align: left;
+  width: 60%;
+  margin: 5px auto;
+}
+
+.general-text-light {
+  color: white;
+  font-size: 18px !important;
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+  margin: 5px auto;
 }
 
 .skills-item {
@@ -88,6 +123,10 @@ html, body {
 @media screen and (max-width: 992px) {
   .router-view {
     margin-left: 0vw;
+  }
+
+  .general-text-light, .general-text-dark {
+    width: 100%;
   }
 }
 </style>
