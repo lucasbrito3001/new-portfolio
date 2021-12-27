@@ -45,7 +45,7 @@
             <Lists
               :listToRender="socialNetworks"
               typeImages="color"
-              :colXs="4"
+              :colXs="6"
               :colMd="4"
               :iconSize="iconSize"
               :useButton="true"
