@@ -101,6 +101,7 @@ export default {
 
 .whatsapp-section {
   margin-top: -65vh;
+  margin-top: calc(var(--vh, 1vh) * -65);
   padding: 10vh 5px;
   padding: calc(var(--vh, 1vh) * 10) 0;
   background-color: var(--main-blue);

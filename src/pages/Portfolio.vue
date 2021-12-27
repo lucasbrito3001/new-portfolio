@@ -104,6 +104,7 @@ export default {
 
 .projects {
   margin-top: -40vh;
+  margin-top: calc(var(--vh, 1vh) * -40);
   padding-bottom: 10vh;
 }
 
