@@ -27,7 +27,7 @@
                 </v-col>
                 <v-col v-if="useButton">
                   <a :href="item.redirectUrl">
-                    <v-btn color="#67d4ff" class="perfil-btn" tile>{{ btnText }}</v-btn>
+                    <v-btn color="#67d4ff" class="perfil-btn" target="_blank" tile>{{ btnText }}</v-btn>
                   </a>
                 </v-col>
             </v-row>
@@ -119,5 +119,9 @@ export default {
   background-color: #ff7b23 !important;
   transition: .35s;
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
