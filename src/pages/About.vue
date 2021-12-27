@@ -139,6 +139,7 @@ export default {
       { label: "Nascimento: ", text: "30 de Janeiro de 2000" },
       { label: "GitHub: ", text: "@lucasbrito3001" },
       { label: "LinkedIn: ", text: "@webdevbrito" },
+      { label: "email: ", text: "devlucasmail@gmail.com" },
     ],
     skillsItems: [
       { icon: "vue-js", desc: "VueJs" },

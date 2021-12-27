@@ -26,7 +26,9 @@
                     </p>
                 </v-col>
                 <v-col v-if="useButton">
-                  <v-btn color="#67d4ff" class="perfil-btn" tile>Ver perfil</v-btn>
+                  <a :href="item.redirectUrl">
+                    <v-btn color="#67d4ff" class="perfil-btn" tile>{{ btnText }}</v-btn>
+                  </a>
                 </v-col>
             </v-row>
           </li>
@@ -87,6 +89,10 @@ export default {
       type: Array,
       default: () => ([]),
     },
+    btnText: {
+      type: String,
+      default: ''
+    }
   },
 };
 </script>
