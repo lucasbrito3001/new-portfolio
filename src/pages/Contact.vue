@@ -45,11 +45,12 @@
             <Lists
               :listToRender="socialNetworks"
               typeImages="color"
-              :colXs="6"
+              :colXs="4"
               :colMd="4"
               :iconSize="iconSize"
               :useButton="true"
               styleListItem="contacts-item"
+              btnText="Ver perfil"
             />
           </v-col>
         </v-row>
@@ -66,12 +67,12 @@ export default {
   },
   data: () => ({
     socialNetworks: [
-      { icon: "github--v1", desc: "GitHub" },
-      { icon: "linkedin", desc: "LinkedIn" },
-      { icon: "instagram", desc: "Instagram" },
-      { icon: "twitter", desc: "Twitter" },
-      { icon: "facebook", desc: "Facebook" },
-      { icon: "medium-logo", desc: "Medium" },
+      { icon: "github--v1", desc: "GitHub", redirectUrl: 'https://github.com/lucasbrito3001' },
+      { icon: "linkedin", desc: "LinkedIn", redirectUrl: 'https://linkedin.com/in/webdevbrito' },
+      { icon: "instagram", desc: "Instagram", redirectUrl: 'https://instagram.com/lucasdebrito12' },
+      { icon: "twitter", desc: "Twitter", redirectUrl: 'https://twitter.com/brito3001' },
+      { icon: "facebook", desc: "Facebook", redirectUrl: 'https://www.facebook.com/lucas.ferrari.brito/' },
+      { icon: "medium-logo", desc: "Medium", redirectUrl: 'https://medium.com/@devlucasmail' },
     ],
     iconSize: null,
     formWpp: {
