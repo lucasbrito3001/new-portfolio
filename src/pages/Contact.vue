@@ -81,7 +81,7 @@ export default {
   }),
   computed: {
     wppMessage: function () {
-        return `*Oii, meu nome é ${this.formWpp.name}, e eu vi seu portfólio. Quero te deixar a seguinte mensagem:* ${ this.formWpp.message }`
+      return `*Oii, meu nome é ${this.formWpp.name}, e eu vi seu portfólio. Quero te deixar a seguinte mensagem:* ${this.formWpp.message}`;
     },
   },
   mounted() {
@@ -126,6 +126,11 @@ ul {
 @media screen and (max-width: 992px) {
   .social-networks {
     padding-bottom: 13vh;
+  }
+
+  .whatsapp-section {
+    margin-top: -40vh;
+    margin-top: calc(var(--vh, 1vh) * -40);
   }
 }
 </style>
