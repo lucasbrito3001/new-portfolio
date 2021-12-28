@@ -151,8 +151,8 @@ export default {
   }
 
   .projects {
-    margin-top: -20vh;
-    margin-top: calc(var(--vh, 1vh) * -20);
+    margin-top: -25vh;
+    margin-top: calc(var(--vh, 1vh) * -25);
   }
 }
 </style>

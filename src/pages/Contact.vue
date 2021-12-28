@@ -30,7 +30,7 @@
               id="whatsapp-message"
               v-model="formWpp.message"
             ></v-textarea>
-            <a :href="`https://wa.me/5518988002094?text=${wppMessage}`">
+            <a :href="`https://wa.me/5518997351747?text=${wppMessage}`">
               <v-btn color="#67d4ff" block>Enviar</v-btn>
             </a>
           </v-col>
@@ -129,8 +129,8 @@ ul {
   }
 
   .whatsapp-section {
-    margin-top: -40vh;
-    margin-top: calc(var(--vh, 1vh) * -40);
+    margin-top: -45vh;
+    margin-top: calc(var(--vh, 1vh) * -45);
   }
 }
 </style>
