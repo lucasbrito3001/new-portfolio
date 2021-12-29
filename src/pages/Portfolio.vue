@@ -35,7 +35,7 @@
             class="figure"
           >
             <a :href="item.repo" target="_blank">
-              <Figure :image="item.img" :caption="item.caption" />
+              <Figure :image="item.img" :caption="item.caption" class="figure-portfolio"/>
             </a>
           </v-col>
         </v-row>
@@ -143,6 +143,10 @@ export default {
 
 .figure.col-md-6.col-12 {
   padding: 8px;
+}
+
+.figure.col-md-6.col-12 a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
