@@ -135,6 +135,7 @@ body {
 .mb-2 {
     margin-bottom: 10px;
 }
+
 @media screen and (max-width: 992px) {
     .router-view {
         margin-left: 0vw;

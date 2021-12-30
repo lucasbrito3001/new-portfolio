@@ -122,6 +122,7 @@ export default {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 @media screen and (max-width: 992px) {
