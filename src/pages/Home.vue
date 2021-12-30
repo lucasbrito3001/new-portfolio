@@ -53,7 +53,26 @@
 
         <section class="home-footer">
             <v-container>
-                <h1 class="general-titles-light">123</h1>
+                <v-row>
+                    <v-col>
+                        <h1 class="general-titles-light">Contatos</h1>
+                        <p class="general-text-light text-center">devlucasmail@gmail.com</p>
+                        <p class="general-text-light text-center">+55 (18) 99735 1747</p>
+                    </v-col>
+                    <v-col class="text-center">
+                        <h1 class="general-titles-light">Redes sociais</h1>
+                        <ul>
+                            <li v-for="(item, idx) in socialNetworks" :key="idx">
+                                <a :href="item.route" target="_blank">
+                                    <img
+                                        class="footer-home-img"
+                                        :src="`https://img.icons8.com/ios-filled/48/ff7b00/${item.icon}.png`"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </v-col>
+                </v-row>
             </v-container>
         </section>
     </div>
@@ -74,6 +93,16 @@ export default {
                 route: "https://www.linkedin.com/in/webdevbrito/",
             },
             { icon: "medium-logo", route: "https://medium.com/@devlucasmail" },
+        ],
+        socialNetworks: [
+            { icon: "github--v1", route: "https://github.com/lucasbrito3001" },
+            {
+                icon: "linkedin--v1",
+                route: "https://www.linkedin.com/in/webdevbrito/",
+            },
+            { icon: "instagram--v1", route: "https://instagram.com/lucasdebrito12" },
+            { icon: "twitter--v1", route: "https://twitter.com/brito3001" },
+            { icon: "facebook", route: "https://facebook.com/lucas.ferrari.brito" },
         ],
         items: [
             {
@@ -164,7 +193,6 @@ footer {
     display: flex;
     width: 100%;
     min-height: 100px;
-    padding-bottom: 10vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -185,6 +213,10 @@ footer {
         display: block;
         text-align: center;
         margin-bottom: 10px;
+    }
+
+    .home-footer {
+        padding-bottom: 10vh;
     }
 }
 </style>
