@@ -150,6 +150,10 @@ export default {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;  
+}
+
 @media screen and (max-width: 992px) {
   .titles {
     text-align: center;
