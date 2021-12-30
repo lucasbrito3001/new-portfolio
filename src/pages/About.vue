@@ -1,20 +1,20 @@
 <template>
-  <div>
+  <div id="general-div">
     <section class="about-intro">
       <v-container class="about-intro-cont">
         <header>
           <h2 class="general-subtitles-dark">Sobre</h2>
-          <h1 class="general-titles-dark">
+          <h1 class="general-titles-light">
             Um pouco sobre quem sou <br />
             e minha trajetória...
           </h1>
         </header>
         <main>
-          <p>
+          <p class="general-text-light">
             Jovem apaixonado por aprendizado e desafios, acredito que seja esse
             o maior motivo para me tornar um desenvolvedor.
           </p>
-          <p>
+          <p class="general-text-light">
             Gosto muito da área e pretendo me especializar cada dia mais, meu
             objetivo futuro é poder compartilhar meu conhecimento com o máximo
             de pessoas possíveis.
@@ -34,32 +34,31 @@
         <v-row class="skills-perfil-row">
           <v-col cols="12">
             <header>
-              <h2 class="subtitle-curriculo">Currículo</h2>
-              <h1 class="title-curriculo">
+              <h2 class="general-subtitles-dark">Currículo</h2>
+              <h1 class="general-titles-dark">
                 Informações pessoais, conhecimentos e <br />
                 habilidades
               </h1>
-              <p class="text-curriculo">
+              <p class="general-text-dark">
                 Tenho front-end como minha stack principal, porém estou em
-                constante estudo para melhorar minha habilidade com back-end
+                constante estudo para melhorar minha habilidade com back-end, atualmente desenvolvo a maioria das minhas aplicações em VueJs e NodeJs, porém também pratico React e um pouco de PHP com Laravel.
               </p>
             </header>
           </v-col>
           <v-col cols="12" md="6" class="perfil-col">
             <header>
-              <h1 class="general-titles-light skills-perfil-title">Perfil</h1>
+              <h2 class="skills-perfil-title">Perfil</h2>
             </header>
             <section class="perfil-text">
-              <p><b>Hobbies: </b><br />Games, Música, Esportes, Programação.</p>
-              <p><b>Nome: </b><br />Lucas de Brito</p>
-              <p><b>Data de nascimento: </b><br />30 de Janeiro de 2000</p>
-              <p><b>GitHub: </b><br />@lucasbrito3001</p>
-              <p><b>LinkedIn: </b><br />@webdevbrito</p>
+              <p v-for="(item, idx) in perfilItems" :key="idx">
+                <b>{{ item.label }} </b><br />
+                {{ item.text }}
+              </p>
             </section>
           </v-col>
           <v-col cols="12" md="6" class="skills-col">
             <header>
-              <h1 class="general-titles-light skills-perfil-title">Skills</h1>
+              <h1 class="skills-perfil-title">Skills</h1>
             </header>
             <Lists
               :listToRender="skillsItems"
@@ -78,8 +77,8 @@
         <v-row class="skills-perfil-row">
           <v-col cols="12">
             <header>
-              <h2 class="subtitle-curriculo">Carreira</h2>
-              <h1 class="title-curriculo">
+              <h2 class="general-subtitles-dark">Carreira</h2>
+              <h1 class="general-titles-dark">
                 Experiência profissional e <br />
                 acadêmica
               </h1>
@@ -87,9 +86,9 @@
           </v-col>
           <v-col cols="12" md="6" class="perfil-col">
             <header>
-              <h1 class="general-titles-light skills-perfil-title">
+              <h2 class="skills-perfil-title">
                 Profissional
-              </h1>
+              </h2>
             </header>
             <Lists
               :listToRender="professionalXp"
@@ -105,9 +104,9 @@
           </v-col>
           <v-col cols="12" md="6" class="skills-col">
             <header>
-              <h1 class="general-titles-light skills-perfil-title">
+              <h2 class="skills-perfil-title">
                 Acadêmica
-              </h1>
+              </h2>
             </header>
             <Lists
               :listToRender="academicXp"
@@ -134,39 +133,71 @@ export default {
     Lists,
   },
   data: () => ({
+    perfilItems: [
+      { label: "Nome: ", text: "Lucas de Brito" },
+      { label: "Hobbies: ", text: "Games, Música, Esportes, Programação" },
+      { label: "Nascimento: ", text: "30 de Janeiro de 2000" },
+      { label: "GitHub: ", text: "@lucasbrito3001" },
+      { label: "LinkedIn: ", text: "@webdevbrito" },
+      { label: "email: ", text: "devlucasmail@gmail.com" },
+    ],
     skillsItems: [
       { icon: "vue-js", desc: "VueJs" },
-      { icon: "javascript--v1", desc: "JavaScript" },
+      { icon: "react-native", desc: "ReactJs" },
       { icon: "angularjs", desc: "AngularJs" },
-      { icon: "bootstrap", desc: "Bootstrap" },
-      { icon: "react-native", desc: "React" },
+      { icon: "javascript--v1", desc: "JavaScript" },
+      { icon: "nodejs", desc: "NodeJs" },
+      { icon: "php", desc: "PHP" },
+      { icon: "api", desc: "API" },
       { icon: "html-5", desc: "HTML5" },
       { icon: "css3", desc: "CSS3" },
-      { icon: "nodejs", desc: "NodeJs" },
+      { icon: "sass", desc: "SASS" },
+      { icon: "bootstrap", desc: "Bootstrap" },
+      { icon: "mysql-logo", desc: "MySQL" },
       { icon: "git", desc: "Git" },
       { icon: "figma--v1", desc: "Figma" },
     ],
     academicXp: [
-      { icon: "book-and-pencil", desc: "Ensino Médio" },
+      { icon: "computer", desc: "HTML5, CSS3, JavaScript" },
       { icon: "activity-grid", desc: "Técnico em Administração de Empresas" },
+      { icon: "book-and-pencil", desc: "Ensino Médio" },
     ],
     academicMoreDescriptionsList: [
-      [ { desc: "Etec Dr. Renato Cordeiro" }, { desc: "2015 - 2017" }, { desc: "Birigui - SP" } ],
-      [ { desc: "Etec Dr. Renato Cordeiro" }, { desc: "2015 - 2017" }, { desc: "Birigui - SP" } ],
+      [{ desc: "Curso em Vídeo" }, { desc: "40h" }, { desc: "Online" }],
+      [
+        { desc: "Etec Dr. Renato Cordeiro" },
+        { desc: "2015 - 2017" },
+        { desc: "Birigui - SP" },
+      ],
+      [
+        { desc: "Etec Dr. Renato Cordeiro" },
+        { desc: "2015 - 2017" },
+        { desc: "Birigui - SP" },
+      ],
     ],
     professionalXp: [
       { icon: "monitor", desc: "FrontEnd Developer" },
       { icon: "monitor", desc: "FullStack Developer" },
     ],
     professionalMoreDescriptionsList: [
-      [ { desc: "Mova P2P" }, { desc: "4 meses" }, { desc: "Itajubá - SP" } ],
-      [ { desc: "Lexart Labs" }, { desc: "Agosto 2021 - atual" }, { desc: "Montevidéu - UY" } ],
-    ]
+      [{ desc: "Mova P2P" }, { desc: "4 meses" }, { desc: "Itajubá - SP" }],
+      [
+        { desc: "Lexart Labs" },
+        { desc: "Agosto 2021 - atual" },
+        { desc: "Montevidéu - UY" },
+      ],
+    ],
   }),
+  mounted() {
+    window.scrollTo(0, 0)
+  },
+  methods: {
+  },
 };
 </script>
 
 <style scoped>
+
 ul {
   list-style: none;
 }
@@ -195,8 +226,10 @@ h2 {
 }
 
 .skills-perfil-title {
+  color: var(--main-blue);
+  font-size: 24px;
   margin: 20px 0;
-  font-weight: 500;
+  font-weight: 700;
   text-align: left;
 }
 
@@ -222,38 +255,11 @@ h2 {
   font-weight: 700;
 }
 
-.subtitle-curriculo {
-  color: var(--second-blue);
-  padding: 0 5px;
-  font-weight: 900;
-  margin: 0 auto;
-  font-size: 24px;
-}
-
-.title-curriculo {
-  color: var(--main-blue);
-  padding: 5px;
-  font-weight: 700;
-  margin: 0 0 20px auto;
-  font-size: 30px;
-}
-
-.text-curriculo {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  font-weight: 300;
-  font-family: "Merriweather", serif;
-  color: var(--gray-text);
-  font-size: 18px;
-}
-
 a {
   text-decoration: none;
 }
 
 main {
-  margin-top: 40px !important;
   color: rgb(255, 255, 255);
   width: 60%;
   margin: 0 auto;
@@ -274,7 +280,8 @@ main p {
   font-family: "Merriweather";
 }
 
-.about-skills, .about-cv {
+.about-skills,
+.about-cv {
   padding: 30px 0;
 }
 
@@ -317,4 +324,5 @@ main p {
     text-align: center;
   }
 }
+
 </style>

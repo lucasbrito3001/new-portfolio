@@ -32,7 +32,7 @@
             <div class="icon-navbar-list-item">
               <img src="https://img.icons8.com/ios/48/ffffff/github--v1.png" />
             </div>
-            <p class="desc-navbar-list-item">REPOSITORIO</p>
+            <p class="desc-navbar-list-item">REPOSITÓRIO</p>
           </li>
         </a>
       </div>
@@ -66,6 +66,7 @@ export default {
   justify-content: center;
   transition: 0.4s;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .navbar:hover {

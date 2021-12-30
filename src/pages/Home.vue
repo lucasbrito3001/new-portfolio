@@ -42,6 +42,9 @@ export default {
       { icon: "medium-logo", route: "https://medium.com/@devlucasmail" },
     ],
   }),
+  mounted() {
+    window.scrollTo(0, 0)
+  },
 };
 </script>
 
