@@ -4,14 +4,10 @@
       <header>
         <h2 class="subtitle">PORTFÓLIO</h2>
         <h1 class="title">Lucas de Brito</h1>
-        <h3 class="stack">| FULL-STACK DEVELOPER |</h3>
-        <v-btn outlined color="#ffffff" class="see-more-button">
+        <h3 class="stack">| FULL STACK DEVELOPER |</h3>
+        <!-- <v-btn outlined color="#ffffff" class="see-more-button">
           Ver mais
-          <img
-            class="see-more-arrow"
-            src="https://img.icons8.com/ios/16/ffffff/expand-arrow--v2.png"
-          />
-        </v-btn>
+        </v-btn> -->
       </header>
       <footer>
         <ul>
@@ -23,14 +19,19 @@
             </a>
           </li>
         </ul>
+        <ArrowDown/>
       </footer>
     </v-container>
   </main>
 </template>
 
 <script>
+import ArrowDown from '../components/ArrowDown.vue'
 export default {
   name: "HomePage",
+  components: {
+    ArrowDown
+  },
   data: () => ({
     footerItems: [
       { icon: "github--v1", route: "https://github.com/lucasbrito3001" },
@@ -93,14 +94,6 @@ footer {
 .stack {
   font-family: "Merriweather", serif;
   color: var(--second-blue);
-}
-
-.see-more-button {
-  margin-top: 40px;
-}
-
-.see-more-arrow {
-  margin-left: 10px;
 }
 
 .skills {

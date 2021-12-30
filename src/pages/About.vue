@@ -21,10 +21,10 @@
           </p>
         </main>
         <footer>
-          <v-btn outlined color="#67d4ff" class="read-more-btn">Ler mais</v-btn>
           <a href="#skills">
-            <v-btn color="#67d4ff" class="skills-btn">Skills</v-btn>
+            <v-btn color="#67d4ff" class="skills-btn" outlined>Ler mais</v-btn>
           </a>
+          <ArrowDown/>
         </footer>
       </v-container>
     </section>
@@ -127,10 +127,12 @@
 </template>
 
 <script>
+import ArrowDown from '../components/ArrowDown.vue'
 import Lists from "../components/Lists.vue";
 export default {
   components: {
     Lists,
+    ArrowDown
   },
   data: () => ({
     perfilItems: [
@@ -272,7 +274,6 @@ footer {
 
 .skills-btn {
   color: rgb(0, 0, 0);
-  margin-left: 20px;
 }
 
 main p {

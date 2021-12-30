@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto"
+    class="mx-auto figure"
   >
     <v-img
       :src="image"
@@ -28,3 +28,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.figure {
+  transition: .4s;
+}
+
+.figure:hover {
+  background-color: var(--main-blue);
+  color: white;
+  transform: scale(1.02);
+  transition: .4s;
+}
+</style>
