@@ -92,7 +92,7 @@ export default {
   align-items: center;
   justify-content: center;
   width: 15vw;
-  height: 5vw;
+  height: 75px;
 }
 
 .navbar-list-item:hover {

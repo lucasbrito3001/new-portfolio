@@ -137,6 +137,7 @@ html, body {
   }
 
   .general-text-light, .general-text-dark {
+    font-size: 16px !important;
     width: 100%;
   }
 }
