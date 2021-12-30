@@ -87,6 +87,7 @@ html, body {
   width: 60%;
   margin: 5px auto;
   font-family: "Merriweather", serif;
+  line-height: 35px;
 }
 
 .general-text-light {
@@ -97,6 +98,7 @@ html, body {
   width: 100%;
   margin: 5px auto;
   font-family: "Merriweather", serif;
+  line-height: 35px;
 }
 
 .skills-item {
@@ -145,7 +147,8 @@ html, body {
   }
 
   .general-text-light, .general-text-dark {
-    font-size: 16px !important;
+    line-height: 30px;
+    font-size: 15px !important;
     width: 100%;
   }
 }

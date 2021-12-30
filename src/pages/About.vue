@@ -276,11 +276,6 @@ footer {
   color: rgb(0, 0, 0);
 }
 
-main p {
-  line-height: 35px;
-  font-family: "Merriweather";
-}
-
 .about-skills,
 .about-cv {
   padding: 30px 0;
@@ -306,11 +301,6 @@ main p {
 
   h2 {
     font-size: 17px;
-  }
-
-  main p {
-    font-size: 13px;
-    line-height: 30px;
   }
 
   .about-cv {
