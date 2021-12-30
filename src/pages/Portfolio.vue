@@ -124,15 +124,16 @@ export default {
 }
 
 .introduction {
-  padding-top: 10vh;
   background-color: var(--main-blue);
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
+  display: flex;
+  align-items: center;
 }
 
 .projects {
-  margin-top: -40vh;
-  margin-top: calc(var(--vh, 1vh) * -40);
+  margin-top: -20vh;
+  margin-top: calc(var(--vh, 1vh) * -20);
   padding-bottom: 10vh;
 }
 
@@ -155,8 +156,8 @@ export default {
   }
 
   .projects {
-    margin-top: -30vh;
-    margin-top: calc(var(--vh, 1vh) * -30);
+    margin-top: -20vh;
+    margin-top: calc(var(--vh, 1vh) * -20);
   }
 }
 </style>
