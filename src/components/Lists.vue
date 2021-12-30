@@ -116,7 +116,7 @@ export default {
 }
 
 .perfil-btn:hover {
-  background-color: #ff7b23 !important;
+  background-color: #ff7b00 !important;
   transition: .35s;
   color: white;
 }
