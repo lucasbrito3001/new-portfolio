@@ -136,6 +136,14 @@ html, body {
     margin-left: 0vw;
   }
 
+  .general-titles-light, .general-titles-dark {
+    font-size: 25px !important;
+  }
+
+  .general-subtitles-light, .general-subtitles-dark {
+    font-size: 22px !important;
+  }
+
   .general-text-light, .general-text-dark {
     font-size: 16px !important;
     width: 100%;
