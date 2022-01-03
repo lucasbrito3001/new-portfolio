@@ -46,7 +46,7 @@
                 style="border: 0; display: block"
                 loading="lazy"
                 allowfullscreen
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2XfSx3ijnztRypmlw11qQjmRj1NVnupg&q=Rua%20Santo%20Mamprim%20650"
+                :src="`https://www.google.com/maps/embed/v1/place?key=${Env.API_KEY_MAPS}&q=Rua%20Santo%20Mamprim%20650`"
             >
             </iframe>
         </section>
@@ -80,6 +80,7 @@
 
 <script>
 import ArrowDown from "../components/ArrowDown.vue";
+import Env from "../../env"
 export default {
     name: "HomePage",
     components: {
@@ -118,6 +119,7 @@ export default {
                 src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
             },
         ],
+        Env: Env
     }),
     mounted() {
         window.scrollTo(0, 0);
