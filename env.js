@@ -1,5 +1,5 @@
 const Env = {
-    API_KEY_MAPS: 'AIzaSyBObF4aezFmCZbnshYPYh7MXmeJsKtArC0'
+    API_KEY_MAPS: 'AIzaSyAJuAV7iwNPEueQV4Rh_bGcBsZtvh2znDU'
 }
 
 export default Env;
